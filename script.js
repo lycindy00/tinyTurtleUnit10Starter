@@ -1,18 +1,43 @@
+/*global TinyTurtle*/
 TinyTurtle.apply(window);
 
-function square(){
-forward(50);
+/*global forward*/
+/*global right*/
+function square(x){
+forward(x);
 right(90);
-forward(50);
+forward(x);
 right(90);
-forward(50);
+forward(x);
 right(90);
-forward(50);
+forward(x);
 right(90);
-forward(50);
+forward(x);
+}
+function triangle(x){
+right(60);
+forward(x);
+right(60);
+forward(x);
+right(150);
+forward(x);
 }
 
+function shape(size, angle){
+forward(size);
+right(angle);
+forward(size);
+right(angle);
+forward(size);
+right(angle);
+forward(size);
+right(angle);
+forward(size);
+}
+
+/*global stamp*/
 // Type your function call below
-
-
+// square (50);
+//  triangle (50);
+shape(50, 70);
 stamp();
